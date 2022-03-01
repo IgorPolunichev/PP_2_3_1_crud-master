@@ -1,13 +1,17 @@
 package web.dao;
 
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import web.model.User;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
-public class UserDaoImp implements UserDao{
+@Repository
+public class UserDaoImp implements UserDao {
+
 
     private List<User> userList;
 
@@ -20,13 +24,15 @@ public class UserDaoImp implements UserDao{
     }
 
     @Override
-    public List<User> index () {
+    public List<User> index() {
         return userList;
     }
 
-    public User show (int id) {
-        return userList.get(id);
+    public User show(int id) {
+//        return userList.get(id);
+        return null;
     }
+
     @Override
     public void add(User user) {
     }
@@ -40,9 +46,4 @@ public class UserDaoImp implements UserDao{
     public User create(User user) {
         return null;
     }
-
-
-
-
-
 }

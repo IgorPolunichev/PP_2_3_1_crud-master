@@ -7,7 +7,7 @@
         <packaging>war</packaging>
       </options>
     </properties>
-    <root id="archive" name="crud.war">
+    <root id="archive" name="MyFirstCRUDApp-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="PP_2_3_1_crud:war exploded" />
     </root>
   </artifact>
